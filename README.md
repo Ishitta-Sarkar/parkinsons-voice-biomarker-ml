@@ -6,11 +6,11 @@ A machine learning-based biomedical data science project for exploring Parkinson
 
 ## Project Overview
 
-Parkinson's disease is a progressive neurodegenerative disorder that affects movement, speech, and motor control. Changes in vocal characteristics have been investigated as potential non-invasive biomarkers for early disease detection and monitoring.
+Parkinson's disease is a progressive neurodegenerative disorder that affects movement, speech, and motor control. Changes in vocal characteristics have been investigated as potential non-invasive biomarkers for disease detection and monitoring.
 
 This project utilizes a publicly available biomedical voice dataset from the UCI Machine Learning Repository and implements a structured machine learning workflow for Parkinson's disease classification.
 
-The repository demonstrates data loading, exploratory analysis, visualization, model development, and performance evaluation using Python-based machine learning tools.
+The repository demonstrates data loading, visualization, machine learning model development, and performance evaluation using Python-based analytical tools.
 
 ---
 
@@ -40,7 +40,6 @@ data/
     processed/
 
 notebooks/
-    parkinsons_voice_analysis.ipynb
 
 src/
     data_loader.py
@@ -63,7 +62,7 @@ figures/
 
 **Source:** UCI Machine Learning Repository
 
-The dataset contains biomedical voice measurements collected from individuals diagnosed with Parkinson's disease and healthy controls.
+The dataset contains biomedical voice measurements collected from individuals diagnosed with Parkinson's disease and healthy control subjects.
 
 ### Dataset Summary
 
@@ -72,8 +71,6 @@ The dataset contains biomedical voice measurements collected from individuals di
 | Total Samples | 195 |
 | Total Features | 24 |
 | Classification Target | status |
-| Healthy Subjects | 0 |
-| Parkinson's Disease Subjects | 1 |
 
 ---
 
@@ -84,11 +81,9 @@ Raw Biomedical Dataset
             ↓
 Data Loading
             ↓
-Exploratory Analysis
+Data Visualization
             ↓
-Visualization
-            ↓
-Feature Selection
+Feature Processing
             ↓
 Machine Learning Classification
             ↓
@@ -126,20 +121,21 @@ The figure below illustrates the distribution of healthy and Parkinson's disease
 
 ![Sample Distribution](figures/sample_distribution.png)
 
----
-
-## Key Findings
+### Key Findings
 
 - The Random Forest classifier achieved an accuracy of 92.3%.
 - Precision of 93.3% demonstrates reliable classification performance.
 - Recall of 96.6% indicates strong sensitivity for Parkinson's disease detection.
-- Results support the applicability of machine learning approaches in biomedical voice-based disease classification studies.
+- The model achieved an F1 score of 94.9%, indicating balanced predictive performance.
+- Results demonstrate the potential applicability of machine learning approaches in biomedical voice-based disease classification studies.
 
 ---
 
 ## Scientific Significance
 
 Voice-based biomarkers represent a promising non-invasive approach for neurological disease screening. Machine learning methods can assist in identifying complex patterns within biomedical datasets and may contribute to future decision-support systems in healthcare and precision medicine.
+
+This project serves as a demonstration of how computational approaches can be integrated with biomedical data to support disease classification research.
 
 ---
 
