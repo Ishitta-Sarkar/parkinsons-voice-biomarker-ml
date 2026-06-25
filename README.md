@@ -119,7 +119,7 @@ Scientific Interpretation
 
 The figure below illustrates the distribution of healthy and Parkinson's disease samples within the dataset.
 
-![Sample Distribution](./figures/sample_distribution.png)
+![Sample Distribution](https://raw.githubusercontent.com/Ishitta-Sarkar/parkinsons-voice-biomarker-ml/main/figures/sample_distribution.png)
 
 ### Key Findings
 
