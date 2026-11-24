@@ -1,0 +1,49 @@
+{
+  "data_sha256": "a36116c2deac07895b79ce97a2f99a1b3720ac4892995ff5c3b9ccb397ed2bc5",
+  "positive_class": 1,
+  "positive_class_meaning": "Parkinson's disease",
+  "primary_metric": "roc_auc",
+  "std_definition": "sample standard deviation of fold scores (ddof=1)",
+  "grouped_cv": {
+    "splitter": "StratifiedGroupKFold",
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42,
+    "group": "subject id parsed from name"
+  },
+  "models": {
+    "majority_baseline": "DummyClassifier(strategy='most_frequent')",
+    "logistic_regression": "StandardScaler + LogisticRegression(C=1, l1_ratio=0, solver='lbfgs', max_iter=5000)",
+    "random_forest": "RandomForestClassifier(n_estimators=500)"
+  },
+  "permutation_importance": {
+    "scoring": "roc_auc",
+    "n_repeats": 20,
+    "random_state": 42,
+    "where": "each grouped test fold, then mean and sample SD across folds"
+  },
+  "cohort": {
+    "n_recordings": 195,
+    "n_columns": 24,
+    "n_features": 22,
+    "n_subjects": 32,
+    "n_pd_subjects": 24,
+    "n_healthy_subjects": 8,
+    "n_pd_recordings": 147,
+    "n_healthy_recordings": 48,
+    "recordings_per_subject_min": 6,
+    "recordings_per_subject_max": 7
+  },
+  "algebraic_duplicate_gap": {
+    "jitter_ddp_minus_3rap_max_abs": 1.0000000000010001e-05,
+    "shimmer_dda_minus_3apq3_max_abs": 1.0000000000010001e-05
+  },
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "package_version": "1.0.0"
+}

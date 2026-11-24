@@ -1,4 +1,10 @@
-pandas
-numpy
-matplotlib
-scikit-learn
+# Python 3.12. Install from a fresh clone with: pip install -r requirements.txt
+numpy==2.5.5
+scipy==1.18.1
+pandas==3.1.1
+matplotlib==3.11.2
+scikit-learn==1.9.1
+joblib==1.6.0
+threadpoolctl==3.8.0
+pytest==9.2.0
+ruff==0.17.6
