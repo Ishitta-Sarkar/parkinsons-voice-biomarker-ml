@@ -1,0 +1,3 @@
+protocol,model,n_estimators,n_train,n_test,n_train_subjects,n_test_subjects,n_subjects_in_both,fraction_test_recordings_seen_in_train,accuracy,balanced_accuracy,f1,roc_auc
+recording_stratified_holdout_20,random_forest,500,156,39,32,24,24,1.0,0.9230769230769231,0.8827586206896552,0.9491525423728814,0.9724137931034483
+legacy_recording_stratified_holdout_20,random_forest,100,156,39,32,24,24,1.0,0.9230769230769231,0.8827586206896552,0.9491525423728814,0.9620689655172414

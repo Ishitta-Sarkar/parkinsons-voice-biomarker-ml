@@ -1,0 +1,76 @@
+cff-version: 1.2.0
+title: "Parkinson's voice biomarkers with subject-grouped cross-validation"
+message: >-
+  If you use this software, please cite it as below. Also cite the UCI
+  Parkinsons dataset and the papers that introduced the voice measures.
+type: software
+authors:
+  - family-names: Sarkar
+    given-names: Ishitta
+    orcid: "https://orcid.org/0009-0008-1028-6010"
+version: 1.0.0
+date-released: 2026-11-24
+license: MIT
+repository-code: "https://github.com/Ishitta-Sarkar/parkinsons-voice-biomarker-ml"
+url: "https://github.com/Ishitta-Sarkar/parkinsons-voice-biomarker-ml"
+abstract: >-
+  Subject-grouped cross-validation of sustained-phonation features for
+  separating people with Parkinson's disease from healthy controls in the
+  UCI Parkinsons recordings, reported against a majority-class baseline.
+keywords:
+  - Parkinson disease
+  - voice biomarkers
+  - subject-grouped cross-validation
+  - UCI Parkinsons
+references:
+  - type: data
+    title: "Parkinsons"
+    authors:
+      - family-names: Little
+        given-names: Max A.
+    year: 2007
+    doi: 10.24432/C59C74
+    license: CC-BY-4.0
+    repository-code: "https://archive.ics.uci.edu/dataset/174/parkinsons"
+  - type: article
+    title: >-
+      Exploiting Nonlinear Recurrence and Fractal Scaling Properties for
+      Voice Disorder Detection
+    authors:
+      - family-names: Little
+        given-names: Max A.
+      - family-names: McSharry
+        given-names: Patrick E.
+      - family-names: Roberts
+        given-names: Stephen J.
+      - family-names: Costello
+        given-names: Declan A. E.
+      - family-names: Moroz
+        given-names: Irene M.
+    journal: "BioMedical Engineering OnLine"
+    year: 2007
+    volume: "6"
+    start: "23"
+    doi: 10.1186/1475-925X-6-23
+  - type: article
+    title: >-
+      Suitability of Dysphonia Measurements for Telemonitoring of
+      Parkinson's Disease
+    authors:
+      - family-names: Little
+        given-names: Max A.
+      - family-names: McSharry
+        given-names: Patrick E.
+      - family-names: Hunter
+        given-names: Eric J.
+      - family-names: Spielman
+        given-names: Jennifer
+      - family-names: Ramig
+        given-names: Lorraine O.
+    journal: "IEEE Transactions on Biomedical Engineering"
+    year: 2009
+    volume: "56"
+    issue: "4"
+    start: 1015
+    end: 1022
+    doi: 10.1109/TBME.2008.2005954
